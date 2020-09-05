@@ -20,14 +20,11 @@ jobs:
     - run: |
         echo Current Branch ${GITHUB_REF#refs/heads/}
         echo ::set-env name=GIT_BRANCH::$(echo ${GITHUB_REF#refs/heads/})
-    - name: Reformat
-      uses: credfeto/action-yaml-format@master
-    - name: Commit files
-      run: |
+    - uses: credfeto/action-yaml-format@master
+    - run: |
         git status
         git config --local user.email "credfeto@users.noreply.github.com"
         git config --local user.name "fun-ynmlfmt[bot]"
         git commit --all -m"[FF-2107] Reformat YAML Files to common format." || true
-    - name: Push
-      run: |
+    - run: |
         git push "https://${{github.actor}}:${{secrets.SOURCE_PUSH_TOKEN}}@github.com/${{github.repository}}.git" "HEAD:${{ env.GIT_BRANCH }}"
