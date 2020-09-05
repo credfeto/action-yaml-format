@@ -1,8 +1,7 @@
 #!/bin/sh -l
 set -eu
 
-echo Converting tabs to spaces
-find ./ -iname '*.sql' -type f -exec bash -c 'expand -t 4 "$0" | sponge "$0"' {} \;
+echo Converting tabs to spaces and remove trailing spaces
+find ./ -iname '*.yml' -type f -exec bash -c 'expand -t 4 "$0" | sed -e "s/ \{1,\}$//" | sponge "$0"' {} \;
+find ./ -iname '*.yaml' -type f -exec bash -c 'expand -t 4 "$0" | sed -e "s/ \{1,\}$//" | sponge "$0"' {} \;
 
-echo Remove trailing whitespace
-find ./ -iname '*.yml' -type f -exec bash -c 'sed -i 's/[ \t]*$//' "$0" | sponge "$0"' {} \;
