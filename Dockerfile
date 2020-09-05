@@ -1,13 +1,9 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y moreutils curl unzip mono-complete
-#RUN curl http://architectshack.com/GetFile.aspx?Page=PoorMansTSqlFormatter\&File=SqlFormatter.1.6.10.zip --output sqlformatter.zip 
-#RUN unzip sqlformatter.zip *.exe -d /
-#RUN chmod +x /SqlFormatter.exe
-#RUN pwd
-#RUN ls
-#COPY SqlFormatter.exe /SqlFormatter.exe
-#COPY config/Sqlformatter.exe.config /SqlFormatter.exe.config
+RUN apt-get update
+RUN apt-get install -y moreutils --no-install-recommends
+RUN rm -rf /var/lib/apt/lists/*
+
 COPY reformat /reformat
 
 ENTRYPOINT ["/reformat"]

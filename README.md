@@ -1,6 +1,9 @@
-# Reformat SQL Files
+# Reformat YAML Files
 
-Reformats TSQL files using [Poor Man's TSQL Formatter](http://architectshack.com/PoorMansTSqlFormatter.ashx).
+Reformats YAML files
+
+* Removes trailing whitepace
+* Converts tabs to spaces
 
 ## How to use it?
 This is a Github action, so it has to be added to a github workflow.  
@@ -20,14 +23,14 @@ jobs:
         fetch-depth: 0
       # Run the reformat action
       - name: Reformat SQL Files
-        uses: credfeto/action-sql-format@master
+        uses: credfeto/action-yaml-format@master
       - name: Commit files
         run: |
           git config --local user.email "<githubusername>@users.noreply.github.com"
-          git config --local user.name "SQL Reformat Bot"
-          git commit --all -m"Reformat SQL Files to common format." || true
+          git config --local user.name "YAML Reformat Bot"
+          git commit --all -m"Reformat YAML Files to common format." || true
       - name: Push
         run: git push "https://${{github.actor}}:${{secrets.SOURCE_PUSH_TOKEN}}@github.com/${{github.repository}}.git" "HEAD:${{ env.GIT_BRANCH }}"
 ```
 
-On each push, it will reformat the SQL.  Note you'll need to commit and push any commits back to your github repo. 
+On each push, it will reformat the YAML files.  Note you'll need to commit and push any commits back to your github repo. 

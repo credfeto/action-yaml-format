@@ -1,5 +1,5 @@
-name: 'Reformat SQL Files'
-description: 'Reformats SQL files'
+name: 'Reformat YAML Files'
+description: 'Reformats YAML files'
 branding:
   icon: 'git-merge'
   color: 'gray-dark'
