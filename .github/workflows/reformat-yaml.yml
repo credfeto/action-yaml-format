@@ -1,5 +1,3 @@
-name: Reformat Yaml 
-
 on:
   push:
     branches-ignore:
