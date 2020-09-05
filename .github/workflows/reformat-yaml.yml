@@ -6,7 +6,7 @@ on:
     - "release/*"
     - "hotfix/*"
     paths:
-    - '**.sql'
+    - '**.yml'
 
 jobs:
   standardise-yaml-files:
