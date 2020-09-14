@@ -21,7 +21,7 @@ jobs:
     - run: |
         echo Current Branch ${GITHUB_REF#refs/heads/}
         echo ::set-env name=GIT_BRANCH::$(echo ${GITHUB_REF#refs/heads/})
-        echo User: ${github.actor}
+        echo User: ${{github.actor}}
     - uses: credfeto/action-yaml-format@master
     - run: |
         git status
