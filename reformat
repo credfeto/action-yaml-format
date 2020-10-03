@@ -2,6 +2,6 @@
 set -eu
 
 echo Converting tabs to spaces and remove trailing spaces
-find ./ -iname '*.yml' -type f -exec bash -c 'expand -t 4 "$0" | sed -e "s/\s*$//" | sponge "$0"' {} \;
-find ./ -iname '*.yaml' -type f -exec bash -c 'expand -t 4 "$0" | sed -e "s/\s*$//" | sponge "$0"' {} \;
+find ./ -iname '*.yml' -type f -exec bash -c 'expand -t 2 "$0" | sed -e "s/\s*$//" | sponge "$0"' {} \;
+find ./ -iname '*.yaml' -type f -exec bash -c 'expand -t 2 "$0" | sed -e "s/\s*$//" | sponge "$0"' {} \;
 
