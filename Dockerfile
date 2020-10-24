@@ -1,8 +1,6 @@
-FROM ubuntu:latest
+FROM alpine:3.12.0
 
-RUN apt-get update
-RUN apt-get install -y moreutils --no-install-recommends
-RUN rm -rf /var/lib/apt/lists/*
+RUN apk --no-cache add grep moreutils
 
 COPY reformat /reformat
 
