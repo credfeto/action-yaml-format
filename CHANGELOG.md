@@ -15,6 +15,10 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 <!-- 
 Releases that have at least been deployed to staging, BUT NOT necessarily released to live.  Changes should be moved from [Unreleased] into here as they are merged into the appropriate release branch
 -->
+## [1.3.1] - 2022-03-22
+### Changed
+- Updated to alpine 3.15.1
+
 ## [1.3.0] - 2021-12-20
 ### Changed
 - Brought in latest version of alpine
