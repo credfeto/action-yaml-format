@@ -1,8 +1,9 @@
 name: 'Reformat YAML Files'
-description: 'Reformats YAML files'
+description: 'Re-formats YAML files'
 branding:
   icon: 'git-merge'
   color: 'gray-dark'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/reformat
+      shell: bash
