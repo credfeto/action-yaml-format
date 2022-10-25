@@ -9,6 +9,7 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 ### Added
 ### Fixed
 ### Changed
+- Changed to a composite action rather than using docker
 ### Removed
 ### Deployment Changes
 
