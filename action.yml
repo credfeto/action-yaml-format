@@ -3,6 +3,7 @@ description: 'Re-formats YAML files'
 branding:
   icon: 'git-merge'
   color: 'gray-dark'
+runs:
   using: 'composite'
   steps:
     - run: $GITHUB_ACTION_PATH/reformat
