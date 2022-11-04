@@ -22,7 +22,7 @@ jobs:
       with:
         fetch-depth: 0
       # Run the reformat action
-      - name: Reformat SQL Files
+      - name: Reformat YAML Files
         uses: credfeto/action-yaml-format@v1.3.1
       - name: Commit files
         run: |
