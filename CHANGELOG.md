@@ -8,6 +8,7 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 ## [Unreleased]
 ### Added
 ### Fixed
+- Fixed typo in action name
 ### Changed
 ### Removed
 ### Deployment Changes
