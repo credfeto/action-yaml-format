@@ -6,10 +6,10 @@ Reformats YAML files
 * Converts tabs to spaces
 
 ## How to use it?
-This is a Github action, so it has to be added to a github workflow.  
+This is a GitHub action, so it has to be added to a GitHub workflow.  
 
 A simple example of running this action on all pushes to the repository would be
-add a `reformatsql.yml` file under `.github/workflows` with the following content
+to add a `reformatyaml.yml` file under `.github/workflows` with the following content
 ```yaml
 on: [push]
 
@@ -17,10 +17,10 @@ jobs:
   reformat-sql:
     runs-on: ubuntu-latest
     steps:
-      # Checkout the source code so we have some files to look at.
+      # Checkout the source code so there are some files to look at.
       - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+        with:
+          fetch-depth: 0
       # Run the reformat action
       - name: Reformat YAML Files
         uses: credfeto/action-yaml-format@v1.3.2
