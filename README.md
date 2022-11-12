@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout the source code so we have some files to look at.
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       with:
         fetch-depth: 0
       # Run the reformat action
       - name: Reformat YAML Files
-        uses: credfeto/action-yaml-format@v1.3.1
+        uses: credfeto/action-yaml-format@v1.3.2
       - name: Commit files
         run: |
           git config --local user.email "<githubusername>@users.noreply.github.com"
