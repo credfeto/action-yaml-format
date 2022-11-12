@@ -10,6 +10,7 @@ Please ADD ALL Changes to the UNRELASED SECTION and not a specific release
 ### Fixed
 - Fixed typo in action name
 ### Changed
+- Updated to alpine 3.16.3
 ### Removed
 ### Deployment Changes
 
