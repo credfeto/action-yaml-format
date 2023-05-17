@@ -1,4 +1,7 @@
 # Reformat YAML Files
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Reformats YAML files
 
@@ -38,6 +41,20 @@ On each push, it will reformat the YAML files.  Note you'll need to commit and p
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://datana.rocks"><img src="https://avatars.githubusercontent.com/u/995707?v=4?s=100" width="100px;" alt="Oskar Stark"/><br /><sub><b>Oskar Stark</b></sub></a><br /><a href="https://github.com/credfeto/action-yaml-format/commits?author=OskarStark" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
