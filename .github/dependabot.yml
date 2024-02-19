@@ -1,7 +1,6 @@
 version: 2
 updates:
 
-
 - package-ecosystem: docker
   directory: "/"
   schedule:
@@ -13,13 +12,11 @@ updates:
   - credfeto
   assignees:
   - credfeto
-  allow:
-  - dependency-type: all
   commit-message:
     prefix: "[Dependencies]"
-  rebase-strategy: "auto"
   labels:
   - "docker"
   - "dependencies"
   - "Changelog Not Required"
-
+  allow:
+  - dependency-type: all
